@@ -6,8 +6,8 @@ function changeColor() {
 	var text_id = "txtColor";
 	var form = document.getElementById(text_id);
 
-	var div_class = "div1";
-	var div = document.getElementsByClassName(div_class);
+	var div_id = "div1";
+	var div = document.getElementById(div_id);
 
 	var color = form.value;
 
