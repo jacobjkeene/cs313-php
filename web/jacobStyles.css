@@ -3,21 +3,21 @@ body {
 }
 
 h1 {
-	align-content: center;
+	text-align: center;
 	color: navy;
 }
 
 h2 {
-	align-content: center;
+	text-align: center;
 	color: blue;
 }
 
 h3 {
-	align-content: center;
+	text-align: center;
 	color: teal;
 }
 
 h4 {
-	align-content: center;
+	text-align: center;
 	color: green;
 }
