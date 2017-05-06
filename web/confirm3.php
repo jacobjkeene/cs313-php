@@ -1,4 +1,5 @@
 <?php
+session.start();
 $address = htmlspecialchars($_POST["address"]);
 $cart = $_POST["cart"];
 ?>
@@ -12,7 +13,7 @@ $cart = $_POST["cart"];
 		<p>Items purchased:</p>
 		<ul>
 		<?
-			foreach ($cart as $cart)
+			foreach ($_SESSION["cart"] as $cart)
 			{
 				$cart_clean = htmlspecialchars($cart);
 				echo "<li><p>$cart_clean</p></li>";

@@ -1,3 +1,6 @@
+<?php
+	session.start();
+?>
 <html>
 	<head>
 		<title>Week 3 Checkout</title>
@@ -11,6 +14,9 @@
 			<br />
 			<input type="submit" value="Submit Answers">
 		</form>
+		<?php
+		$_SESSION["address"] = $_POST["address"];
+		?>
 		<a href="shop3.php">Back to Shopping Cart</a>
 		<a href="confirm3.php">Continue to Confirmation Page</a>
 	</body>

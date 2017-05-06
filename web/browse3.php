@@ -1,3 +1,6 @@
+<?php
+	session.start();
+?>
 <html>
 	<head>
 		<title>Week 3 Browse Items</title>
@@ -16,6 +19,9 @@
 			<br/>
 			<input type="submit" value="Add Items">
 		</form>
+		<?php
+		$_SESSION["cart"] = $_POST["cart"];
+		?>
 		<br/>
 		<a href="shop3.php">Shopping Cart</a>
 	</body>
