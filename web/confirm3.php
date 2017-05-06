@@ -1,5 +1,5 @@
 <?php
-session.start();
+session_start();
 $address = htmlspecialchars($_POST["address"]);
 $cart = $_POST["cart"];
 ?>
