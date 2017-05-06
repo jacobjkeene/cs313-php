@@ -12,7 +12,7 @@
 			<label for="address">Address</label>
 			<input type="text" placeholder="Address" id="address" name="address">
 			<br />
-			<input type="submit" value="Submit Answers">
+			<input type="submit" value="Add address">
 		</form>
 		<?php
 		$_SESSION["address"] = $_POST["address"];

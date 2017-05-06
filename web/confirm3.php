@@ -1,6 +1,6 @@
 <?php
 session_start();
-$address = htmlspecialchars($_POST["address"]);
+$address = htmlspecialchars($_SESSION["address"]);
 $cart = $_POST["cart"];
 ?>
 <html>
