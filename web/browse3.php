@@ -17,6 +17,6 @@
 			<input type="submit" value="Add Items">
 		</form>
 		<br/>
-			<a href="shop3.php">Shopping Cart</a>
+		<a href="shop3.php">Shopping Cart</a>
 	</body>
 </html>
