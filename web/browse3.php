@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<h1>Browse Items</h1>
-		<form method="POST" action="browse3.php">
+		<form method="POST" action="browse3.php" action="shop3.php">
 			Please select any of the following items you wish to purchase. Simply check the box next to the item to add it to your shopping cart.<br />
 			<input type="checkbox" name="cart[]" id="cart1" value="Laptop"><label for="cart1">Laptop</label><br />
 			<input type="checkbox" name="cart[]" id="cart2" value="Desktop"><label for="cart2">Desktop</label><br />
