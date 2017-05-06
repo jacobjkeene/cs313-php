@@ -12,10 +12,7 @@ $cart = $_POST["cart"];
 	</head>
 	<body>
 		<h1>Confirmation Page</h1>
-		<p>Street: <?=$street ?></p>
-		<p>City: <?=$city ?></p>
-		<p>State: <?=$state ?></p>
-		<p>ZIP: <?=$zip ?></p>
+		<p>Your Shipping Address: <?=$street ?>, <?=$city ?>, <?=$state ?> ?=$zip ?></p>
 		<p>Items purchased:</p>
 		<ul>
 		<?
