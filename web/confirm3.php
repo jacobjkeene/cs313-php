@@ -1,6 +1,9 @@
 <?php
 session_start();
-$address = htmlspecialchars($_SESSION["address"]);
+$street = htmlspecialchars($_SESSION["street"]);
+$city = htmlspecialchars($_SESSION["city"]);
+$state = htmlspecialchars($_SESSION["state"]);
+$zip = htmlspecialchars($_SESSION["zip"]);
 $cart = $_POST["cart"];
 ?>
 <html>
@@ -9,7 +12,10 @@ $cart = $_POST["cart"];
 	</head>
 	<body>
 		<h1>Confirmation Page</h1>
-		<p>Address: <?=$address ?></p>
+		<p>Street: <?=$street ?></p>
+		<p>City: <?=$city ?></p>
+		<p>State: <?=$state ?></p>
+		<p>ZIP: <?=$zip ?></p>
 		<p>Items purchased:</p>
 		<ul>
 		<?
