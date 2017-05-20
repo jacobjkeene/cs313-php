@@ -31,16 +31,13 @@ catch (PDOException $ex) {
  die();
 }
 
+$statement = $db->query('SELECT user_name, password, userID FROM users');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . '<br/>';
+}
+
 ?>
-
-<p>Click the following link to see our Users in the database:</p>
-<a href="users5.php>">Users</a>
-
-<p>Click the following link to see our Shows in the database:</p>
-<a href="shows5.php>">Shows</a>
-
-<p>Click the following link to see our Ratings in the database:</p>
-<a href="ratings5.php>">Ratings</a>
 
 </body>
 </html>
