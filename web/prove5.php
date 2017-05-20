@@ -31,10 +31,10 @@ catch (PDOException $ex) {
  die();
 }
 
-$statement = $db->query('SELECT user_name, password FROM users');
+$statement = $db->query('SELECT user_name, password, userID FROM users');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . '<br/>';
+  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . ' userID: ' . $row['userID'] . '<br/>';
 }
 
 
