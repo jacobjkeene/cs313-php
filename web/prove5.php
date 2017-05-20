@@ -36,6 +36,19 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . '<br/>';
 }
+
+
+$statement = $db->query('SELECT showID, show_name FROM shows');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo ' show name: ' . $row['show_name'] . '<br/>';
+}
+
+$statement = $db->query('SELECT friendID, friend_name FROM friends');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo ' Friend name: ' . $row['friend_name'] . '<br/>';
+}
 ?>
 
 </body>
