@@ -31,11 +31,11 @@ catch (PDOException $ex) {
  die();
 }
 
-foreach ($db->query('SELECT now()') as $row)
+$statement = $db->query('SELECT user_name, password FROM users');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
- print "<p>$row[0]</p>\n\n";
+  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . '<br/>';
 }
-
 ?>
 
 </body>
