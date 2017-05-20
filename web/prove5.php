@@ -34,7 +34,7 @@ catch (PDOException $ex) {
 $statement = $db->query('SELECT user_name, password, userID FROM users');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . ' userID: ' . $row['userID'] . '<br/>';
+  echo 'user: ' . $row['user_name'] . ' password: ' . $row['password'] . '<br/>';
 }
 
 
@@ -44,10 +44,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   echo ' show name: ' . $row['show_name'] . '<br/>';
 }
 
-$statement = $db->query('SELECT friendID, friend_name FROM friends');
+$statement = $db->query('SELECT rating FROM ratings');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo ' Friend name: ' . $row['friend_name'] . '<br/>';
+  echo ' Rating: ' . $row['rating'] . '<br/>';
 }
 ?>
 
