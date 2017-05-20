@@ -13,15 +13,11 @@ if (empty($dbUrl)) {
 
 $dbopts = parse_url($dbUrl);
 
-print "<p>$dbUrl</p>\n\n";
-
 $dbHost = $dbopts["host"];
 $dbPort = $dbopts["port"];
 $dbUser = $dbopts["user"];
 $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
-
-print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
 
 try {
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
@@ -31,7 +27,11 @@ catch (PDOException $ex) {
  die();
 }
 
+?>
 
+<h1>Shows</h1>
+
+<?php
 $statement = $db->query('SELECT showID, show_name FROM shows');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
