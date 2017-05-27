@@ -16,5 +16,10 @@ $db = get_db();
 <p>Click the following link to see our Ratings in the database:</p>
 <a href="ratings5.php">Ratings</a>
 
+
+<h2>Inserting into Database</h2>
+<p>Click the following link if you would like to add addition values into our database:</p>
+<a href="prove5.php">Inserting new Values!!</a>
+
 </body>
 </html>
