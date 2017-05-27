@@ -18,19 +18,19 @@ try
 	$statement->bindValue(':password', $pass);
 	$statement->execute();
 
+	$userId = $db->lastInsertId("users_id_seq");
+
 	//insert into shows DB
 	$query = 'INSERT INTO shows(show_name) VALUES(:show_name)';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':show_name', $show);
 	$statement->execute();
 
-
-	$userId = $db->lastInsertId("users_id_seq");
 	$showId = $db->lastInsertId("shows_id_seq");
 
 	//insert into ratings DB
-	$query = 'INSERT INTO ratings(userID, showID, rating) VALUES(:userID, :showID, :rating)';
-	$statement = $db->prepare($query);
+	$statement = $db->prepare('INSERT INTO ratings(userID, showID, rating) VALUES(:userID, :showID, :rating)');
+	
 	$statement->bindValue(':userID', $userId);
 	$statement->bindValue(':showID', $showId);
 	$statement->bindValue(':rating', $rating);
