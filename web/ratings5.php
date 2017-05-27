@@ -16,5 +16,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 ?>
 
+<a href="displayAnimeTV.php">Link back to Display Database</a>
 </body>
 </html>
