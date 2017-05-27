@@ -6,7 +6,7 @@ require("dbConnect.php");
 $db = get_db();
 ?>
 
-<h1>Updated Database</h1>
+<h1>AnimeTV Database</h1>
 <p>Click the following link to see our Users in the database:</p>
 <a href="users5.php">Users</a>
 

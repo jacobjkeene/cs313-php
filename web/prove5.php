@@ -28,6 +28,8 @@ $db = get_db();
 <input type="submit" value="Add to Database" />
 </form>
 
+<p>Don't want to add new values? Click on the following link to return to AnimeTV Database</p>
+<a href="displayAnimeTV.php">AnimeTV Database</a>
 
 </body>
 </html>
