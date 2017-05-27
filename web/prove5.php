@@ -1,25 +1,25 @@
-<html>
-<body>
-
 <?php
 require("dbConnect.php");
 $db = get_db();
 ?>
 
+<!DOCTYPE html>
+<html>
+<body>
 <h1>Welcome!</h1>
 
 <form id="mainForm" action="insertAnimeTV.php" method="POST">
 
-	<input type="text" id="newUser" name="newUser"></input>
 	<label for="newUser">New User</label>
+	<input type="text" id="newUser" name="newUser"></input>
 	<br /><br />
 
-	<input type="text" id="newPass" name="newPass"></input>
 	<label for="newPass">Password</label>
+	<input type="text" id="newPass" name="newPass"></input>
 	<br /><br />
 
-	<input type="text" id="newShow" name="newShow"></input>
 	<label for="newShow">Show</label>
+	<input type="text" id="newShow" name="newShow"></input>
 	<br /><br />
 
 	<label for="txtRating">Rating:</label><br />

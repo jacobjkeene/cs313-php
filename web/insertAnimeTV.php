@@ -1,9 +1,9 @@
 <?php
 
-$newUser = $_POST['newUser'];
-$newPass = $_POST['newPass'];
-$newShow = $_POST['newShow'];
-$txtRating = $_POST['txtRating'];
+$user = $_POST['newUser'];
+$pass = $_POST['newPass'];
+$show = $_POST['newShow'];
+$rating = $_POST['txtRating'];
 
 require("dbConnect.php");
 $db = get_db();
@@ -12,22 +12,22 @@ $db = get_db();
 try
 {
 	//insert into users DB
-	$query = 'INSERT INTO users(user_name, password) VALUES(:newUser, :newPass)';
+	$query = 'INSERT INTO users(user_name, password) VALUES(:user_name, :password)';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':user_name', $newUser);
-	$statement->bindValue(':password', $newPass);
+	$statement->bindValue(':user_name', $user);
+	$statement->bindValue(':password', $pass);
 	$statement->execute();
 
 	//insert into shows DB
-	$query = 'INSERT INTO shows(show_name) VALUES(:newShow)';
+	$query = 'INSERT INTO shows(show_name) VALUES(:show_name)';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':show_name', $newShow);
+	$statement->bindValue(':show_name', $show);
 	$statement->execute();
 
 	//insert into ratings DB
-	$query = 'INSERT INTO ratings(rating) VALUES(:txtRating)';
+	$query = 'INSERT INTO ratings(rating) VALUES(:rating)';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':rating', $txtRating);
+	$statement->bindValue(':rating', $rating);
 	$statement->execute();
 
 }
