@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="jacobStyles.css">
+<title>AnimeTV Shows</title>
 </head>
 <body>
 

@@ -7,6 +7,7 @@ $db = get_db();
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="jacobStyles.css">
+<title>Entry Form</title>
 </head>
 <body>
 <h1>Welcome!</h1>
