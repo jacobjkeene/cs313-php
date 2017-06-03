@@ -1,6 +1,8 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="jacobStyles.css">
+</head>
 <body>
-
 <?php
 require("dbConnect.php");
 $db = get_db();

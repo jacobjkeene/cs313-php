@@ -5,6 +5,9 @@ $db = get_db();
 
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="jacobStyles.css">
+</head>
 <body>
 <h1>Welcome!</h1>
 
