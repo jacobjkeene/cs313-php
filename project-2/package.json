@@ -1,0 +1,28 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Cs313 Project 2",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.5.6",
+    "express": "^4.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobjkeene/cs313-project2"
+    
+  
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "ISC"
+}
